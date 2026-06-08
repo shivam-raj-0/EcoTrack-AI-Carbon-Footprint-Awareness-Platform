@@ -20,6 +20,12 @@ function calculateCarbon() {
 
   let waste = Number(document.getElementById("waste").value);
 
+  if (electricity <= 0 || vehicle <= 0 || flights <= 0 || waste <= 0) {
+    alert("Please fill all fields correctly.");
+
+    return;
+  }
+
   /* Emissions */
 
   let electricityEmission = electricity * 0.5;
@@ -131,6 +137,26 @@ function generateSuggestions(electricity, vehicle, flights, waste) {
   }
 
   document.getElementById("suggestionBox").innerHTML = suggestion;
+}
+
+function askAssistant() {
+  let question = document.getElementById("userQuestion").value.toLowerCase();
+
+  let answer = "";
+
+  if (question.includes("electricity")) {
+    answer = "Use LED bulbs and switch off unused appliances.";
+  } else if (question.includes("transport") || question.includes("vehicle")) {
+    answer = "Use public transport, carpooling, or cycling.";
+  } else if (question.includes("tree")) {
+    answer = "Planting trees helps absorb CO₂ emissions.";
+  } else if (question.includes("flight")) {
+    answer = "Reduce air travel whenever possible.";
+  } else {
+    answer = "Try reducing energy consumption and adopting sustainable habits.";
+  }
+
+  document.getElementById("assistantAnswer").innerHTML = answer;
 }
 
 /* =========================

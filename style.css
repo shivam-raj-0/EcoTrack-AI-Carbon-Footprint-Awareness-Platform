@@ -345,15 +345,57 @@ nav ul li a:hover {
     text-align: center;
 }
 
-#suggestionBox {
-    max-width: 900px;
-    margin: auto;
+.assistant-box {
+
+    max-width: 800px;
+
+    margin: 40px auto;
+
     background: white;
-    padding: 30px;
+
+    padding: 25px;
+
     border-radius: 20px;
-    line-height: 1.8;
+
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+.assistant-box input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border-radius: 10px
+
+}
+
+.assistant-box button {
+
+    padding: 12px 25px;
+
+    background: #2e7d32;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
+}
+
+#assistantAnswer {
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
 }
 
 /* =========================

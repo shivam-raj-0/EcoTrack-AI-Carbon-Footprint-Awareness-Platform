@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -51,7 +51,7 @@
       </div>
 
       <div class="earth-animation" data-aos="zoom-in">
-        <img src="assets/earth.png" alt="earth">
+        <img src="assets/earth.png" alt="earth" />
       </div>
     </section>
 
@@ -85,20 +85,16 @@
       <h2>Carbon Footprint Calculator</h2>
 
       <div class="calculator-box">
-        <input
-          type="number"
-          id="electricity"
-          placeholder="Electricity Usage (kWh/month)"
-        />
+        <label for="electricity"> Electricity Usage (kWh/month) </label>
+        <input type="number" id="electricity" />
 
-        <input
-          type="number"
-          id="vehicle"
-          placeholder="Vehicle Travel (km/month)"
-        />
+        <label for="vehicle"> Vehicle Travel (km/month) </label>
+        <input type="number" id="vehicle" />
 
-        <input type="number" id="flights" placeholder="Flights Per Year" />
+        <label for="flights"> Flights Per Year </label>
+        <input type="number" id="flights" />
 
+        <label for="diet"> Diet Type </label>
         <select id="diet">
           <option value="50">Vegetarian</option>
 
@@ -107,11 +103,8 @@
           <option value="150">Non Vegetarian</option>
         </select>
 
-        <input
-          type="number"
-          id="waste"
-          placeholder="Waste Generated (kg/month)"
-        />
+        <label for="waste"> Waste Generated (kg/month) </label>
+        <input type="number" id="waste" />
 
         <button onclick="calculateCarbon()">Calculate Footprint</button>
       </div>
@@ -167,10 +160,20 @@
     <section class="suggestions">
       <h2>AI Eco Suggestions</h2>
 
-      <div id="suggestionBox">
-        Calculate your footprint to get personalized eco-friendly
-        recommendations.
+      <div class="assistant-box">
+        <h2>🤖 Ask EcoTrack AI</h2>
+
+        <input
+          type="text"
+          id="userQuestion"
+          placeholder="Ask a sustainability question"
+        />
+
+        <button onclick="askAssistant()">Ask</button>
+
+        <div id="assistantAnswer">Ask a question...</div>
       </div>
+      
     </section>
 
     <!-- Carbon Reduction Challenge -->
@@ -336,6 +339,8 @@
       <p>Built for Carbon Footprint Awareness</p>
 
       <p>© 2026 EcoTrack AI</p>
+
+      <p>Created By Shivam Singh B.Tech CSE (AI & ML) Student 🧑‍🎓</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
