@@ -1,2 +1,144 @@
-# EcoTrack-AI-Carbon-Footprint-Awareness-Platform
-A modern Carbon Footprint Awareness Platform with AI-powered eco suggestions, emission analytics, interactive charts, dark mode, sustainability dashboard and carbon reduction challenges.
+# 🌍 EcoTrack AI - Carbon Footprint Awareness Platform
+
+## Overview
+
+EcoTrack AI is a modern web application designed to help users calculate, analyze, and reduce their carbon footprint.
+
+The platform provides an interactive carbon footprint calculator, emission analytics dashboard, AI-powered sustainability suggestions, and environmental awareness resources.
+
+---
+
+## ✨ Features
+
+### 🌱 Carbon Footprint Calculator
+Calculate emissions based on:
+
+- Electricity Consumption
+- Vehicle Travel Distance
+- Flights Per Year
+- Diet Type
+- Waste Generation
+
+### 📊 Emission Analytics Dashboard
+
+- Carbon Score Analysis
+- Emission Breakdown Chart
+- Monthly Carbon Trend Graph
+- Progress Indicator
+
+### 🏆 Eco Badge System
+
+Users receive badges based on their carbon footprint:
+
+- 🥇 Gold Earth Saver
+- 🥈 Silver Eco Champion
+- 🥉 Bronze Eco Citizen
+
+### 🌳 Tree Offset Calculator
+
+Shows the estimated number of trees required to offset carbon emissions.
+
+### 🤖 AI Eco Suggestions
+
+Provides personalized recommendations to reduce environmental impact.
+
+### 🌱 Green Challenge
+
+Encourages users to:
+
+- Plant Trees
+- Save Electricity
+- Use Public Transport
+- Reduce Plastic Waste
+
+### 🌍 Climate Awareness
+
+Includes:
+
+- Climate Facts
+- Renewable Energy Awareness
+- Frequently Asked Questions
+
+### 🌙 Dark Mode
+
+Modern dark/light theme support.
+
+### 📄 Carbon Report Download
+
+Users can download their carbon footprint report.
+
+---
+
+## 🛠 Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Chart.js
+- AOS (Animate On Scroll)
+
+---
+
+## 📂 Project Structure
+
+```text
+EcoTrack-AI/
+│
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── assets/
+    └── earth.png
+```
+
+---
+
+## 🚀 How to Run
+
+1. Download or clone the repository.
+2. Open the project folder.
+3. Run `index.html` in your browser.
+
+No backend setup is required.
+
+---
+
+## 🔮 Future Enhancements
+
+- User Authentication
+- Real-time Climate Data API
+- Carbon Footprint History Tracking
+- AI Chat Assistant
+- Gamification and Rewards System
+
+---
+
+## 👨‍💻 Author
+
+**Shivam Singh**
+
+B.Tech CSE (AI & ML)
+
+---
+
+## 🎯 Project Purpose
+
+This project was developed as part of the **Carbon Footprint Awareness Platform Challenge** to promote sustainability, climate awareness, and responsible environmental practices.
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+- Home Page
+- Carbon Calculator
+- Dashboard
+- Dark Mode
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub.
