@@ -140,6 +140,46 @@ B.Tech CSE (AI & ML)
 
 ---
 
+## 🎯 Chosen Vertical
+
+Environmental Sustainability & Climate Awareness
+
+EcoTrack AI acts as a smart sustainability assistant that helps users understand, analyze, and reduce their carbon footprint through interactive calculations, emission analytics, and personalized recommendations.
+
+---
+
+## 🧠 Approach & Logic
+
+The application collects user lifestyle information such as:
+
+- Electricity Usage
+- Vehicle Travel
+- Flights Per Year
+- Diet Preferences
+- Waste Generation
+
+Using predefined emission factors, EcoTrack AI calculates estimated carbon emissions and:
+
+- Generates a Carbon Score
+- Assigns an Eco Badge
+- Estimates Required Tree Offsets
+- Displays Interactive Charts
+- Provides Personalized Sustainability Suggestions
+
+The system follows a rule-based decision-making approach to simulate assistant-like behavior and guide users toward environmentally responsible choices.
+
+---
+
+## 📌 Assumptions Made
+
+- Emission factors are approximate values used for awareness purposes.
+- User inputs represent average monthly usage.
+- Carbon calculations are simplified for educational use.
+- Suggestions are generated using predefined sustainability rules.
+- The platform is intended for awareness and learning purposes rather than official carbon auditing.
+
+---
+
 ## 🎯 Project Purpose
 
 This project was developed as part of the **Carbon Footprint Awareness Platform Challenge** to promote sustainability, climate awareness, and responsible environmental practices.
