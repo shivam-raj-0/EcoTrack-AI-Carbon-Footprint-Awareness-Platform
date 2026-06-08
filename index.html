@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EcoTrack AI - Carbon Footprint Awareness Platform</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav>
+      <div class="logo">🌍 EcoTrack AI</div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#calculator">Calculator</a></li>
+
+        <li><a href="#dashboard">Dashboard</a></li>
+
+        <li><a href="#facts">Facts</a></li>
+
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <button id="themeBtn">🌙</button>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+      <div class="hero-content" data-aos="fade-right">
+        <h1>Track Your Carbon Footprint</h1>
+
+        <p>
+          Measure your environmental impact, analyze your emissions, and adopt
+          sustainable habits for a greener future.
+        </p>
+
+        <a href="#calculator" class="btn"> Calculate Now </a>
+      </div>
+
+      <div class="earth-animation" data-aos="zoom-in">
+        <img src="assets/earth.png" alt="earth">
+      </div>
+    </section>
+
+    <!-- Climate Statistics -->
+
+    <section class="stats">
+      <div class="card" data-aos="fade-up">
+        <h2>1.1°C</h2>
+        <p>Global Temperature Rise</p>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <h2>22kg</h2>
+        <p>CO₂ Absorbed by One Tree</p>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <h2>75%</h2>
+        <p>Energy Saved Using LEDs</p>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <h2>2050</h2>
+        <p>Net Zero Emission Goal</p>
+      </div>
+    </section>
+
+    <!-- Calculator -->
+
+    <section id="calculator" class="calculator">
+      <h2>Carbon Footprint Calculator</h2>
+
+      <div class="calculator-box">
+        <input
+          type="number"
+          id="electricity"
+          placeholder="Electricity Usage (kWh/month)"
+        />
+
+        <input
+          type="number"
+          id="vehicle"
+          placeholder="Vehicle Travel (km/month)"
+        />
+
+        <input type="number" id="flights" placeholder="Flights Per Year" />
+
+        <select id="diet">
+          <option value="50">Vegetarian</option>
+
+          <option value="100">Mixed Diet</option>
+
+          <option value="150">Non Vegetarian</option>
+        </select>
+
+        <input
+          type="number"
+          id="waste"
+          placeholder="Waste Generated (kg/month)"
+        />
+
+        <button onclick="calculateCarbon()">Calculate Footprint</button>
+      </div>
+    </section>
+
+    <!-- Result Dashboard -->
+
+    <section id="dashboard" class="dashboard">
+      <h2>Results Dashboard</h2>
+
+      <div class="result-card">
+        <h1 id="result">0 kg CO₂</h1>
+
+        <h2 id="score">Carbon Score</h2>
+
+        <h3 id="badge">🏆 Eco Badge</h3>
+
+        <div class="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+
+      <!-- Tree Counter -->
+
+      <div class="tree-box">
+        <h2>🌳 Trees Needed To Offset Emissions</h2>
+
+        <h3 id="treeCount">0 Trees</h3>
+      </div>
+    </section>
+
+    <!-- Charts Section -->
+
+    <section class="charts">
+      <h2>Emission Analytics</h2>
+
+      <div class="chart-container">
+        <div class="chart-card">
+          <h3>Emission Breakdown</h3>
+
+          <canvas id="carbonChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+          <h3>Monthly Carbon Trend</h3>
+
+          <canvas id="trendChart"></canvas>
+        </div>
+      </div>
+    </section>
+    <!-- AI Suggestions -->
+
+    <section class="suggestions">
+      <h2>AI Eco Suggestions</h2>
+
+      <div id="suggestionBox">
+        Calculate your footprint to get personalized eco-friendly
+        recommendations.
+      </div>
+    </section>
+
+    <!-- Carbon Reduction Challenge -->
+
+    <section class="challenge">
+      <h2>🌱 30-Day Green Challenge</h2>
+
+      <div class="challenge-box">
+        <label>
+          <input type="checkbox" />
+          Plant 5 Trees
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          Use Bicycle 3 Days Per Week
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          Save 20 kWh Electricity
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          Avoid Single-Use Plastic
+        </label>
+      </div>
+    </section>
+
+    <!-- Leaderboard -->
+
+    <section class="leaderboard">
+      <h2>🏆 Eco Leaderboard</h2>
+
+      <div class="leaderboard-grid">
+        <div class="leader-card">
+          <h1>🥇</h1>
+
+          <h3>Eco Warrior</h3>
+
+          <p>95 Eco Score</p>
+        </div>
+
+        <div class="leader-card">
+          <h1>🥈</h1>
+
+          <h3>Green Champion</h3>
+
+          <p>88 Eco Score</p>
+        </div>
+
+        <div class="leader-card">
+          <h1>🥉</h1>
+
+          <h3>Earth Saver</h3>
+
+          <p>80 Eco Score</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Climate Facts -->
+
+    <section id="facts" class="facts">
+      <h2>🌍 Climate Facts</h2>
+
+      <div class="fact-grid">
+        <div class="fact-card">
+          🌳 One mature tree absorbs around 22kg CO₂ every year.
+        </div>
+
+        <div class="fact-card">⚡ LED bulbs use up to 75% less energy.</div>
+
+        <div class="fact-card">
+          🚲 Cycling significantly reduces transport emissions.
+        </div>
+
+        <div class="fact-card">
+          ♻ Recycling reduces waste and saves natural resources.
+        </div>
+      </div>
+    </section>
+
+    <!-- Renewable Energy -->
+
+    <section class="renewable">
+      <h2>⚡ Renewable Energy Awareness</h2>
+
+      <div class="renewable-content">
+        <div class="renewable-card">
+          ☀ Solar Energy
+
+          <p>
+            Solar panels convert sunlight into electricity and reduce dependence
+            on fossil fuels.
+          </p>
+        </div>
+
+        <div class="renewable-card">
+          🌬 Wind Energy
+
+          <p>
+            Wind turbines generate clean electricity without producing
+            greenhouse gases.
+          </p>
+        </div>
+
+        <div class="renewable-card">
+          💧 Hydropower
+
+          <p>Hydropower uses flowing water to generate renewable energy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section id="faq" class="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>What is a Carbon Footprint?</h3>
+
+        <p>
+          A carbon footprint is the total amount of greenhouse gases generated
+          by human activities.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Why should I reduce my carbon footprint?</h3>
+
+        <p>
+          Reducing emissions helps fight climate change and protects the
+          environment.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How can I reduce emissions?</h3>
+
+        <p>
+          Use renewable energy, public transport, and energy-efficient
+          appliances.
+        </p>
+      </div>
+    </section>
+
+    <!-- Download Report -->
+
+    <section class="report-section">
+      <button onclick="downloadReport()">📄 Download Carbon Report</button>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <h2>🌍 EcoTrack AI</h2>
+
+      <p>Track • Analyze • Reduce • Sustain</p>
+
+      <p>Built for Carbon Footprint Awareness</p>
+
+      <p>© 2026 EcoTrack AI</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
