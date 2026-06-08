@@ -79,6 +79,24 @@ Users can download their carbon footprint report.
 
 ---
 
+## 🌐 Live Demo
+
+🔗 Website: https://ecotrack-ai.netlify.app/
+
+Explore the live Carbon Footprint Awareness Platform here:
+
+https://ecotrack-ai.netlify.app/
+
+---
+
+## 📂 GitHub Repository
+
+GitHub Repository Link:
+
+https://github.com/shivam-raj-0/EcoTrack-AI-Carbon-Footprint-Awareness-Platform
+
+---
+
 ## 📂 Project Structure
 
 ```text
