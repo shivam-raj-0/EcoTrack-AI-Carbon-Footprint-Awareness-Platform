@@ -345,6 +345,35 @@ nav ul li a:hover {
     text-align: center;
 }
 
+#suggestionBox {
+
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+}
+
+#suggestionBox:hover {
+
+    transform: translateY(-5px);
+
+}
+
 .assistant-box {
 
     max-width: 800px;
@@ -371,7 +400,6 @@ nav ul li a:hover {
     margin: 10px 0;
 
     border-radius: 10px
-
 }
 
 .assistant-box button {
@@ -614,6 +642,25 @@ footer p {
 
 .dark nav {
     background: #000;
+}
+
+.dark #suggestionBox {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark #assistantAnswer {
+    color: black;
+}
+
+.dark .assistant-box h2 {
+    color: black;
+}
+
+.dark .assistant-box input {
+    background: #2c2c2c;
+    color: white;
+    border: 1px solid #444;
 }
 
 /* =========================
