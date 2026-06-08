@@ -188,12 +188,21 @@ This project was developed as part of the **Carbon Footprint Awareness Platform 
 
 ## 📸 Screenshots
 
-Add screenshots of:
+### 🏠 Home Page
 
-- Home Page
-- Carbon Calculator
-- Dashboard
-- Dark Mode
+![Home Page](screenshots/home.png)
+
+### 🧮 Carbon Calculator
+
+![Calculator](screenshots/calculator.png)
+
+### 📊 Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### 🌙 Dark Mode
+
+![Dark Mode](screenshots/darkmode.png)
 
 ---
 
