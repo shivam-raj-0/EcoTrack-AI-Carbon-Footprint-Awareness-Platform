@@ -86,13 +86,16 @@
 
       <div class="calculator-box">
         <label for="electricity"> Electricity Usage (kWh/month) </label>
-        <input type="number" id="electricity" />
+        <input type="number" id="electricity" required
+aria-label="Electricity Usage" />
 
         <label for="vehicle"> Vehicle Travel (km/month) </label>
-        <input type="number" id="vehicle" />
+        <input type="number" id="" required
+aria-label="Vehicle Usage" />
 
         <label for="flights"> Flights Per Year </label>
-        <input type="number" id="flights" />
+        <input type="number" id="" required
+aria-label="Flights Usage" />
 
         <label for="diet"> Diet Type </label>
         <select id="diet">
@@ -104,7 +107,8 @@
         </select>
 
         <label for="waste"> Waste Generated (kg/month) </label>
-        <input type="number" id="waste" />
+        <input type="number" id="" required
+aria-label="Waste Usage" />
 
         <button onclick="calculateCarbon()">Calculate Footprint</button>
       </div>
