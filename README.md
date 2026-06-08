@@ -42,6 +42,17 @@ Shows the estimated number of trees required to offset carbon emissions.
 
 Provides personalized recommendations to reduce environmental impact.
 
+## 🤖 Smart Assistant Capabilities
+
+EcoTrack AI includes a rule-based sustainability assistant that:
+
+- Understands user sustainability questions
+- Provides contextual environmental recommendations
+- Suggests carbon reduction strategies
+- Guides users toward eco-friendly habits
+
+This assistant uses user context and predefined sustainability logic to deliver personalized responses.
+
 ### 🌱 Green Challenge
 
 Encourages users to:
@@ -203,6 +214,41 @@ This project was developed as part of the **Carbon Footprint Awareness Platform 
 ### 🌙 Dark Mode
 
 ![Dark Mode](screenshots/darkmode.png)
+
+---
+
+## ⚙️ System Workflow
+
+User Input
+↓
+Carbon Emission Calculation
+↓
+Carbon Score Generation
+↓
+Eco Badge Assignment
+↓
+AI Recommendation Engine
+↓
+Charts & Analytics Dashboard
+↓
+Downloadable Carbon Report
+
+---
+
+## 🧪 Testing
+
+The application has been manually tested for:
+
+- Carbon footprint calculations
+- Carbon score generation
+- Eco badge assignment
+- Dark mode functionality
+- AI Eco Suggestions
+- Download report feature
+- Chart rendering
+- Responsive design
+
+All tested features work as expected.
 
 ---
 
